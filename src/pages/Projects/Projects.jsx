@@ -1,8 +1,11 @@
+import { NavLink, useLocation } from 'react-router-dom';
 import Project from '../../components/Project/Project';
 import {projects} from "../../helpers/projectsList";
 import css from './Projects.module.css';
 
-const Projects = () => {
+export default function Projects() {
+	const location = useLocation();
+
 	return (
 		<main className={css.section}>
 			<div className={css.container}>
@@ -10,12 +13,16 @@ const Projects = () => {
 				<ul className={css.projects}>
 					{projects.map((project, index) => {
 						return (
-							<Project
-								key={index}
-								title={project.title}
-								img={project.img}
-								index={index}
-							/>
+							<>
+								<Project
+									key={index}
+									title={project.title}
+									img={project.img}
+									index={index}
+									to={`${index}`}
+									state={{ from: location }}
+								/>
+							</>
 						);
 					})}
 				</ul>
@@ -23,5 +30,3 @@ const Projects = () => {
 		</main>
 	);
 };
-
-export default Projects;
