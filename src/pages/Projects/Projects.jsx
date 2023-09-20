@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Project from '../../components/Project/Project';
 import {projects} from "../../helpers/projectsList";
 import css from './Projects.module.css';
