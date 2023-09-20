@@ -24,7 +24,7 @@ export default function NavBar() {
             </li>
           </ul>
           <div className="copyright">
-            <p>© 2022 xrsQugi</p>
+            <p>© 2023 xrsQugi</p>
           </div>
         </div>
       </div>
