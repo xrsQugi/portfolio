@@ -1,0 +1,43 @@
+/* General */
+.section {
+    padding: 70px 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+.title_1 {
+    margin-bottom: 60px;
+  
+    font-family: DM Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.5px;
+    color: #5c62ec;
+    text-align: center;  
+}
+
+/* Projects  */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+@media (max-width: 620px) {
+    /* General */
+    .section {
+      padding: 40px 0;
+    }
+    .title_1 {
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+}
