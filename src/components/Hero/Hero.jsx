@@ -13,7 +13,7 @@ export default function Hero() {
 				<div className={css.hero_text}>
 					<p>with passion for discovering and creating.</p>
 				</div>
-				<a href="#!" className={css.btn}>
+				<a href={"CV"} className={css.btn} download>
 					Download CV
 				</a>
 			</div>
