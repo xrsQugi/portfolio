@@ -11,7 +11,7 @@ export default function Contacts() {
                     <p>Odesa, Ukraine</p>
                 </li>
                 <li className={css.content_list_item}>
-                    <h2 className="title_2">Telegram / Viber</h2>
+                    <h2 className={css.title_2}>Telegram / Viber</h2>
                     <p>
                         <a href="tel:+360985105570">+(360) 98 510 55 70</a>
                     </p>
